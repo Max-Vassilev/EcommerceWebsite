@@ -25,5 +25,5 @@ A user-friendly, feature-rich e-commerce platform built with **Django** to offer
 ## **Technology Stack**
 
 - **Backend**: Django (Python)
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS
 - **Database**: SQLite (easily replaceable with PostgreSQL, MySQL, etc.)
