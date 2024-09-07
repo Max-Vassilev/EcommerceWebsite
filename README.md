@@ -20,7 +20,7 @@ A user-friendly, feature-rich e-commerce platform built with **Django** to offer
   - **🔖 Discounts**: Products with **discounts** display the **old price (crossed out)** and the **new discounted price**.
 
 - **ℹ️ About Section**:
-  - **📄 Information**: Learn more about the business or project in the dedicated About page.
+  - **📄 Information**: Learn more about the project in the dedicated About page.
 
 ## **Technology Stack**
 
