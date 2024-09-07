@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Product
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+from django import forms
+from .forms import SignUpForm
 
 
 def home(request):
@@ -32,3 +36,22 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     return redirect('home')
+
+
+def register_user(request):
+    form = SignUpForm()
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+    
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            # Log in user:
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('home')
+        else:
+            return redirect('register')
+
+    return render(request, 'register.html', {'form': form})

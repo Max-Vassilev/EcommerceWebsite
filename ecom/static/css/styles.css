@@ -291,7 +291,7 @@ footer a:hover {
 }
 
 
-.login-container{
+.login-register-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,4 +343,43 @@ footer a:hover {
 
 .mb-3 {
   margin-bottom: 16px;
+}
+
+form {
+    margin-top: 100px;
+}
+
+/* Button Styling */
+form button {
+    background-color: #2ebf91;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #27a57f;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+    
+    form button {
+        width: 100%;
+    }
 }
