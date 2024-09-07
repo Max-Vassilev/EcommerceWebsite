@@ -12,6 +12,12 @@ def home(request):
 
     return render(request, 'home.html', {'products': products})
 
+
+def product(request, pk):
+    product = Product.objects.get(id=pk)
+
+    return render(request, 'product.html', {'product': product})
+
 def about(request):
     return render(request, 'about.html', {})
 
@@ -55,3 +61,4 @@ def register_user(request):
             return redirect('register')
 
     return render(request, 'register.html', {'form': form})
+

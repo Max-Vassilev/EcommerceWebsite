@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="product-container">
+    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image" />
+    
+    <h2>{{ product.name }}</h2>
+    
+    <p>
+        {% if product.is_sale %}
+            <strike>${{ product.price }}</strike> ${{ product.sale_price }}
+        {% else %}
+            ${{ product.price }}
+        {% endif %}
+    </p>
+    
+    <p>{{ product.description }}</p>
+
+    <a href="#" class="add-to-cart-btn">Add to Cart</a>
+</div>
+
+{% endblock %}

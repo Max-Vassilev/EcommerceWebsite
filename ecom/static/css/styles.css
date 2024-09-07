@@ -383,3 +383,23 @@ form button:active {
         width: 100%;
     }
 }
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+    min-height: 90vh;
+}
+
+strike {
+    color: red;
+    margin-right: 10px;
+}
+
+.product-container img{
+    width: 20%;
+    height: 35vh;
+}

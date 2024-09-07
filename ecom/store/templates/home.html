@@ -18,7 +18,7 @@
                         ${{ product.price }}
                     {% endif %}
                 </p>
-                <a href="#" class="add-to-cart-btn">Add to cart</a>
+                <a href="{% url 'product' product.id %}" class="add-to-cart-btn">See more</a>
             </div>
         {% endfor %}
     </div>
