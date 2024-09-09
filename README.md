@@ -2,7 +2,8 @@
 
 A user-friendly, feature-rich e-commerce platform built with **Django** to offer a seamless online shopping experience.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/8121cbef-24c5-459a-824a-5d97d9e98ae6">
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/c38b127c-9dbc-46db-bc6b-9d4f5c81e671">
+
 
 
 ## **Features**
