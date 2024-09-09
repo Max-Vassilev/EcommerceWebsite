@@ -5,6 +5,20 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from .forms import SignUpForm
+from store.models import Category
+
+
+def category(request, name):
+    name = name.replace('-', ' ')
+
+    try:
+        category = Category.objects.get(name=name)
+        products = Product.objects.filter(category=category)
+
+        return render(request, 'category.html', {'products': products, 'category': category})
+
+    except:
+        return redirect('home')
 
 
 def home(request):

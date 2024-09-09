@@ -14,8 +14,10 @@
             ${{ product.price }}
         {% endif %}
     </p>
-    
-    <p>{{ product.description }}</p>
+
+    {% if product.description %}
+        <p>{{ product.description }}</p>
+    {% endif %}
 
     <a href="#" class="add-to-cart-btn">Add to Cart</a>
 </div>

@@ -231,7 +231,7 @@ footer a:hover {
     align-items: center;
     padding: 10px;
     padding-top: 0px;
-    height: 80%;
+    height: 325px;
 }
 
 .product-card img {
@@ -402,4 +402,33 @@ strike {
 .product-container img{
     width: 20%;
     height: 35vh;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 15px;
+}
+
+.categories li {
+    margin: 0 10px;
+}
+
+.categories a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categories a:hover {
+    text-decoration: underline;
 }
