@@ -5,7 +5,6 @@ A user-friendly, feature-rich e-commerce platform built with **Django** to offer
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/c38b127c-9dbc-46db-bc6b-9d4f5c81e671">
 
 
-
 ## **Features**
 
 - **🔑 User Authentication**:
