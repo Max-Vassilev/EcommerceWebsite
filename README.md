@@ -31,9 +31,6 @@ A user-friendly, feature-rich e-commerce platform built with **Django** to offer
 
 ## **More screenshots**
 
-## *Category: Laptop*
-<img width=:700" alt="image" src="https://github.com/user-attachments/assets/7c314f9a-bc34-46d0-a96b-8200571947f7">
-
 ## *Login*
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/a8d8c545-04fa-49d1-aa39-4de7fb493d41">
 
