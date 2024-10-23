@@ -61,13 +61,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ecom.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "E-Commerce Database",
+        "USER": "e_commerce_database_02nf_user",
+        "PASSWORD": "OrLyVLHiCvvB8XM3QVjH4v5Gf9qoMozK",
+        "HOST": "dpg-cscje5l6l47c739bhhj0-a",
+        "PORT": "5432",
     }
 }
 
