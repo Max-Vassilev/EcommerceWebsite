@@ -12,14 +12,39 @@
             <strike>${{ product.price }}</strike> ${{ product.sale_price }}
         {% else %}
             ${{ product.price }}
+            <br/>ID: {{ product.id }}
         {% endif %}
     </p>
 
     {% if product.description %}
         <p>{{ product.description }}</p>
     {% endif %}
-
-    <a href="#" class="add-to-cart-btn">Add to Cart</a>
+    
+    <a href="#" class="add-to-cart-btn" id="add-cart" data-product-id="{{ product.id }}">Add to Cart</a>
 </div>
+
+<script>
+    $(document).on('click', '#add-cart', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'cart_add' %}",
+            data: {
+                // Make sure this is retrieving the product ID from the data attribute
+                product_id: $(this).data('product-id'),
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                action: 'post'
+            },
+            success: function(json) {
+                console.log(json);
+            },
+            error: function(xhr, errmsg, err) {
+                console.log("Error: ", errmsg);  // Added logging for debugging
+            }
+        });
+    });
+</script>
+
+
 
 {% endblock %}
