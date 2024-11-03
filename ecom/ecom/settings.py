@@ -14,8 +14,6 @@ SECRET_KEY = 'django-insecure-^1irch-zuzko7t7c^!-^c2-p45^8fzamqy^4*m(jsvk!tp=%l2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://ecommercewebsite-rnfo.onrender.com/']
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -62,15 +60,12 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "E-Commerce Database",
-        "USER": "e_commerce_database_02nf_user",
-        "PASSWORD": "OrLyVLHiCvvB8XM3QVjH4v5Gf9qoMozK",
-        "HOST": "dpg-cscje5l6l47c739bhhj0-a",
-        "PORT": "5432",
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
